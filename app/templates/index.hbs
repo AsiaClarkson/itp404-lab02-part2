@@ -1,0 +1,7 @@
+{{#each model as |user|}}
+<h2>
+    {{#link-to 'user' user.id}}
+   Name: {{user.firstName}} {{user.lastName}}
+   {{/link-to}}
+</h2>
+{{/each}}
